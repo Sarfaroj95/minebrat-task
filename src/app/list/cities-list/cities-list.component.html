@@ -1,0 +1,3 @@
+<select class="form-select form-select-md" (change)="Selected($event)" *ngIf="childMessage">
+    <option *ngFor="let city of childMessage" value={{city.cityName}}>{{city.cityName}}</option>
+</select>
